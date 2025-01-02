@@ -28,7 +28,7 @@ OMP_NUM_THREADS=1 python -m torch.distributed.launch \
         --opt adamw \
         --opt_betas 0.9 0.95 \
         --warmup_epochs 40 \
-        --save_ckpt_freq 20 \
+        --save_ckpt_freq 2 \
         --epochs 801 \
         --log_dir ${OUTPUT_DIR} \
         --output_dir ${OUTPUT_DIR}
